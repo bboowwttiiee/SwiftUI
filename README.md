@@ -17,3 +17,7 @@ https://user-images.githubusercontent.com/25493451/190871852-2b0ac5b2-130a-462d-
         },
         "Simulator Target Bundle" : "com.bowtie.Dynamic-Island"
     }
+
+### 2. Landmarks – an app for discovering and sharing the places you love
+
+https://user-images.githubusercontent.com/25493451/190873140-fd4f5a43-4829-46aa-adfe-2a6138fcb9f3.mp4
