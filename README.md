@@ -29,3 +29,7 @@ https://user-images.githubusercontent.com/25493451/194049170-20754be9-c80b-4e9d-
 ### 4. FructusApp – this app helps you to learn more about fruits and berries from the point of view of healthy nutrition
 
 https://user-images.githubusercontent.com/25493451/194070703-1f691199-851b-49f9-94ea-f6069b9dc11b.MOV
+
+### 5. Trivia – a popular game in which you answer questions by choosing one of several possible answers
+
+https://user-images.githubusercontent.com/25493451/194073044-43f77b6a-8fae-40b3-bbf2-6acaa310cbc9.mov
