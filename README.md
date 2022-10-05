@@ -25,3 +25,7 @@ https://user-images.githubusercontent.com/25493451/190873140-fd4f5a43-4829-46aa-
 ### 3. ShapeMorphingAnimation – an app that shows shape morphing animation that was created using Canvas and Filters
 
 https://user-images.githubusercontent.com/25493451/194049170-20754be9-c80b-4e9d-8dfa-bf801db4c817.mov
+
+### 4. FructusApp – this app helps you to learn more about fruits and berries from the point of view of healthy nutrition
+
+https://user-images.githubusercontent.com/25493451/194070703-1f691199-851b-49f9-94ea-f6069b9dc11b.MOV
