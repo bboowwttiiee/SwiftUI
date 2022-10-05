@@ -11,7 +11,7 @@ struct MorphingView: View {
     @State private var currentImage: CustomShape = .flame
     @State private var pickerImage: CustomShape = .flame
     
-    @State private var turnOnImageMorph: Bool = true
+    @State private var turnOnImageMorph: Bool = false
     @State private var blurRadius: CGFloat = 0
     @State private var animateMorph: Bool = false
     
@@ -20,7 +20,7 @@ struct MorphingView: View {
             GeometryReader { proxy in
                 let size = proxy.size
                 
-                Image("moon")
+                Image("image")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: size.width, height: size.height)
@@ -28,7 +28,7 @@ struct MorphingView: View {
                     .overlay(content: {
                         Rectangle()
                             .fill(.white)
-                            .opacity(turnOnImageMorph ? 1 : 0)
+                            .opacity(turnOnImageMorph ? 0 : 1)
                     })
                     .mask {
                         // Morphing shapes with the help of Canvas and Filters
