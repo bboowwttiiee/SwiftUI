@@ -20,7 +20,7 @@ struct NewTaskView: View {
     @State var taskTitle: String = ""
     @State var taskDescription: String = ""
     @State var taskDate: Date = Date()
-    @State var taskPriority: Priority = .medium
+    @State var taskPriority: Priority = .low
     
     @Environment(\.managedObjectContext) var context
     @Environment(\.colorScheme) var colorScheme
@@ -100,6 +100,7 @@ struct NewTaskView: View {
                 if let task = taskModel.editTask {
                     taskTitle = task.taskTitle ?? ""
                     taskDescription = task.taskDescription ?? ""
+                    taskPriority = Priority(rawValue: task.taskPriority ?? "") ?? .low
                 }
             }
         }

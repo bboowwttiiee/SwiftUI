@@ -156,11 +156,9 @@ struct Home: View {
                 } //: VSTACK
             }
             
-            /// changing...
-            
             VStack {
                 VStack(spacing: 10) {
-                    HStack(alignment: .bottom) {
+                    HStack(alignment: .top) {
                         Text(task.taskTitle ?? "")
                             .font(.title2.bold())
                         
@@ -173,7 +171,7 @@ struct Home: View {
                             .font(.callout)
                             .foregroundColor(.gray)
                         
-                        Spacer()
+                        Spacer(minLength: 45)
                         Circle()
                             .fill(
                                 !taskModel.isCurrentHour(date: task.taskDate ?? Date())
