@@ -156,20 +156,42 @@ struct Home: View {
                 } //: VSTACK
             }
             
+            /// changing...
+            
             VStack {
-                HStack(alignment: .top, spacing: 10) {
-                    VStack(alignment: .leading, spacing: 12) {
+                VStack(spacing: 10) {
+                    HStack(alignment: .bottom) {
                         Text(task.taskTitle ?? "")
                             .font(.title2.bold())
                         
+                        Spacer()
+                        Text(task.taskDate?.formatted(date: .omitted, time: .shortened) ?? "")
+                    } //: HSTACK
+                    
+                    HStack(alignment: .top) {
                         Text(task.taskDescription ?? "")
                             .font(.callout)
                             .foregroundColor(.gray)
-                    } //: VSTACK
-                    .hLeading()
-                    
-                    Text(task.taskDate?.formatted(date: .omitted, time: .shortened) ?? "")
-                } //: HSTACK
+                        
+                        Spacer()
+                        Circle()
+                            .fill(
+                                !taskModel.isCurrentHour(date: task.taskDate ?? Date())
+                                ? .gray.opacity(0.6)
+                                : (task.taskPriority == "Low"
+                                   ? .yellow
+                                   : (task.taskPriority == "Medium"
+                                      ? .green
+                                      : .red))
+                            )
+                            .opacity(0.9)
+                            .frame(width: 40, height: 40)
+                            .overlay {
+                                Text(task.taskPriority == "Low" ? "!" : (task.taskPriority == "Medium" ? "!!" : "!!!"))
+                                    .font(.headline)
+                            }
+                    } //: HSTACK
+                } //: VSTACK
                 
                 if taskModel.isCurrentHour(date: task.taskDate ?? Date()) {
                     HStack(spacing: 12) {
@@ -202,7 +224,7 @@ struct Home: View {
             .padding(.bottom, taskModel.isCurrentHour(date: task.taskDate  ?? Date()) ? 0 : 10)
             .hLeading()
             .background {
-                Color("AccentColor")
+                Color("AccentColor").opacity(0.9)
                     .cornerRadius(25)
                     .opacity(taskModel.isCurrentHour(date: task.taskDate ?? Date()) ? 1 : 0)
             }
