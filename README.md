@@ -1,9 +1,9 @@
 # SwiftUI
 Apps or some interesting features developed using SwiftUI framework and sometimes small implementations of UIKit
 
-### 1. TowDow is a reminder. It helps you to keep track of the completion of tasks from your to-do list. It work with CoreData so all the tasks you create or edit remains after closing and reopening the app
+### 1. TowDow is a reminder. It helps you to keep track of the completion of tasks from your to-do list. It work with CoreData so all the tasks you create or edit remains after closing and reopening the app. It also supports a dark mode
 
-https://user-images.githubusercontent.com/25493451/203093203-e05f83ad-510d-4b9c-924b-9f3dc6b8a112.mov
+https://user-images.githubusercontent.com/25493451/203096272-f73c03cf-0a1b-4b01-922f-7c9fc20a4cad.mov
 
 ### 2. Dynamic Island – a new look of notifications on iPhones with Dynamic Island
 
